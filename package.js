@@ -20,10 +20,3 @@ Package.onUse(function(api) {
     api.addFiles(['spark-js.js'], 'server');
     api.export('Spark', 'server');
 });
-
-Package.onTest(function(api) {
-    api.use('tinytest');
-    api.use('ecmascript');
-    api.use('rickbehl:spark-js');
-    api.addFiles('rickbehl:spark-js-tests.js');
-});
